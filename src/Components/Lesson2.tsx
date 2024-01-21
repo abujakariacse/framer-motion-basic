@@ -4,7 +4,16 @@ const Lesson2 = () => {
 
   const parent = {
     initial: { opacity: 0, scale: 0.9 },
-    animate: { opacity: 1, scale: 1 },
+    animate: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: "easeInOut",
+        duration: 2,
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
+      },
+    },
   };
   const child = {
     initial: { opacity: 0, scale: 0.9 },
@@ -17,12 +26,6 @@ const Lesson2 = () => {
         variants={parent}
         initial="initial"
         animate="animate"
-        transition={{
-          type: "spring",
-          duration: 2,
-          delayChildren: 0.3,
-          staggerChildren: 0.3,
-        }}
         className="size-52 bg-indigo-500 rounded flex justify-center items-center flex-wrap gap-3 p-2"
       >
         <motion.div
