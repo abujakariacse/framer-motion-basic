@@ -1,10 +1,11 @@
 import "./App.css";
-import Lesson2 from "./Components/Lesson2";
+
+import Lesson3 from "./Components/Lesson3";
 
 function App() {
   return (
     <>
-      <Lesson2 />
+      <Lesson3 />
     </>
   );
 }
