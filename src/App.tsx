@@ -1,11 +1,12 @@
 import "./App.css";
 
-import Lesson7 from "./Components/Lesson7";
+import Lesson8 from "./Components/Lesson8";
 
 function App() {
   return (
     <>
-      <Lesson7 />
+      <div className="bg-orange-500 h-lvh w-full"></div>
+      <Lesson8 />
     </>
   );
 }
