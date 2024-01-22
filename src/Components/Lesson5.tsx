@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 const Lesson5 = () => {
   const parentRef = useRef(null);
-  // drag
+  // Translate
   const parent = {
     hidden: { x: 0, y: 0, opacity: 0 },
     visible: {
